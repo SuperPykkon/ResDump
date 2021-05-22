@@ -1,0 +1,85 @@
+<!doctype html public "-//w3c//dtd html 4.01//en" "http://www.w3.org/tr/html4/strict.dtd">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="./assets/css/master.css">
+		<title></title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="navbar-brand">
+				<a href="./index.html">
+					ResDump
+				</a>
+			</div>
+			<div class="navbar-items">
+				<ul>
+					<li>
+						<a href="./resources.html">Resources</a>
+					</li>
+					<li>
+						<a href="./contact.html">Contact us</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main class="resources">
+			<div class="container">
+				<h1>Resources</h1>
+				<p>Search for resources you want, use the search box below to dig deeper into the list.</p>
+				
+				<hr />
+
+
+				<div id="resources">
+					<input id="search" class="search" placeholder="Search" />
+					<button id="sort" class="sort" data-sort="name">Sort</button>
+					<ul class="list">
+						<li>
+							<h3 class="title">Smart Notes Online</h3>
+							<a class="link" href="https://www.smartnotesonline.com/">https://www.smartnotesonline.com</a>
+							<p class="desc">Smart Notes Online provides help to the students by classifying resources, such as Books, Revision Guides, Notes, Past Papers, Mark schemes and Examiner reports.</p>
+						</li>
+						<li>
+							<h3 class="title">ZNotes</h3>
+							<a class="link" href="https://znotes.org/">https://znotes.org</a>
+							<p class="desc">ZNotes is the ultimate revision platform with 20+ million hits. Free summarized revision notes for international examination boards written for students, by students.</p>
+						</li>
+						<li>
+							<h3 class="title">RevisePro</h3>
+							<a class="link" href="https://revisepro.org/">https://revisepro.org</a>
+							<p class="desc">CIE IGCSE and O-level revision notes, all based on the latest specifications.</p>
+						</li>
+						<li>
+							<h3 class="title">Ibrahim Irfanullah</h3>
+							<a class="link" href="https://www.youtube.com/c/IbrahimIrfanullah">https://www.youtube.com/c/IbrahimIrfanullah</a>
+							<p class="desc">Tutorial videos for O Level Additional Mathematics (4037). Chapters are organized in playlists</p>
+						</li>
+						<li>
+							<h3 class="title">ptet chemistry</h3>
+							<a class="link" href="https://www.youtube.com/c/ptetchemistry">https://www.youtube.com/c/ptetchemistry</a>
+							<p class="desc">GCSE/O/A/IB Level chemistry concepts and application with full paper tutorials.</p>
+						</li>
+					</ul>
+
+				</div>
+
+
+			</div>
+		</main>
+		<footer>
+			<p>(c) Copyright 2021 by nobody. All rights reversed.</p>	
+		</footer>
+		<script src="./assets/js/libs/list.min.js"></script>
+		<script>
+		var options = {
+			valueNames: [ 'title', 'link', 'desc' ]
+		};
+
+		var resList = new List('resources', options);
+		</script>
+	</body>
+</html>
